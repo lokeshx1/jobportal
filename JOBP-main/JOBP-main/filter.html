@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details</title>
+    <link rel="stylesheet" href="moredetails.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Explore Job Listings</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <select id="searchCriteria">
+                 <option value="company" disabled selected>ALL</option>
+                <option value="company">Company Name</option>
+                <option value="jobTitle">Job Title</option>
+                <option value="salary">Salary</option>
+            </select>
+            <button id="clearButton">Clear</button>
+        </div>
+        <div class="job-grid" id="jobListingsContainer"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p style="margin-left: 120px; font-weight: bold;font-size: 20px;">Thank you for applying!</p>
+            <div class="icon-container">
+                <img src="https://th.bing.com/th?id=OIP.oYSdZ2ozK1UW890889kGCQHaId&w=233&h=267&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Green Tick">
+            </div>
+        </div>
+    </div>
+
+    <script src="MD3.js"></script>
+</body>
+</html>
